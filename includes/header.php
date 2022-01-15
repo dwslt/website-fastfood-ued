@@ -31,7 +31,7 @@ if(isset($_SESSION['email'])){
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/style.css" media="all">
-  <title>HungPhan Store</title>
+  <title>Kuka - Đồ ăn nhanh</title>
   <link rel="stylesheet" href="styles/style.css" media="all">
   <!-- <script src="/js/jquery-3.6.0.min.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -46,7 +46,7 @@ if(isset($_SESSION['email'])){
         <div class="header_wrapper">
           <div class="header_logo">
             <a href="index.php">
-            <img id="logo" src="images/ls.png">
+            <img style="margin-left: 70px;" id="logo" src="images/ls.png">
             </a>
           </div><!--/.header_logo-->
           <div id="form">

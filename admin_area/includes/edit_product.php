@@ -88,7 +88,7 @@ $fetch_edit = mysqli_fetch_array($edit_product);
                 <td><input type="text" name="product_keywords" value="<?php echo($fetch_edit['product_keywords']) ?>" required/ id=""></td>
             </tr>
             <tr">
-                <td colspan="7"><input type="submit" name="edit_product" value="Lưu thanh đổi" id=""></td>
+                <td colspan="7"><input type="submit" name="edit_product" value="Lưu thay đổi" id=""></td>
             </tr>
         </table>
     </form>
