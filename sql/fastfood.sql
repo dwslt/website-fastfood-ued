@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 15, 2022 lúc 03:41 AM
+-- Thời gian đã tạo: Th1 21, 2022 lúc 11:03 AM
 -- Phiên bản máy phục vụ: 10.4.22-MariaDB
 -- Phiên bản PHP: 7.3.33
 
@@ -60,13 +60,6 @@ CREATE TABLE `cart` (
   `quantity` int(11) NOT NULL DEFAULT 1,
   `user_id` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Đang đổ dữ liệu cho bảng `cart`
---
-
-INSERT INTO `cart` (`cart_id`, `product_id`, `product_title`, `quantity`, `user_id`) VALUES
-(274, 71, 'Pizza Viền Phomai', 1, 42);
 
 -- --------------------------------------------------------
 
@@ -127,7 +120,7 @@ INSERT INTO `products` (`product_id`, `product_title`, `product_price`, `product
 (67, 'Gà rán B++', 39000, 'Hamburger[a] (tiếng Việt đọc là hăm-bơ-gơ hay hem-bơ-gơ, phát âm tiếng Anh là /ˈhæmbɜrɡər/) là một loại thức ăn bao gồm bánh mì kẹp thịt xay (thường là thịt bò) ở giữa. Miếng thịt có thể được nướng, chiên, hun khói hay nướng trên lửa. Hamburger thường ăn kèm với pho mát, rau diếp, cà chua, hành tây, dưa chuột muối chua, thịt xông khói, hoặc ớt; ngoài ra, các loại gia vị như sốt cà chua, mù tạt, sốt mayonnaise, đồ gia vị, hoặc \"nước xốt đặc biệt\", (thường là một biến tấu của sốt Thousand Island) cũng có thể thể rưới lên món bánh. Loại bánh hamburger có topping là pho mát được mọi người gọi là hamburger pho mát.[1]\r\n\r\nThuật ngữ \"burger\" cũng có thể chỉ đến miếng thịt (patty) đặt trên món bánh, đặc biệt là ở Vương quốc Anh, nơi thuật ngữ \"patty\" hiếm khi được sử dụng, hoặc chỉ đơn thuần là ám chỉ đến thịt bò xay. Vì từ hamburger thường ngụ ý đến thịt bò, nên để rõ ràng hơn, tên của loại thịt hoặc nguyên liệu thay thế thịt có thể được đặt trước \"burger\", chẳng hạn như burger bò (beef burger), burger gà tây (turkey burger), burger bò rừng (Bison burger) hoặc burger chay (vegie burger).', '7.jpg', 'buger, hambuger, combo buger', 0, 1, '', 99, 2, 1),
 (68, 'Khoai tây chiên', 19000, 'Hamburger[a] (tiếng Việt đọc là hăm-bơ-gơ hay hem-bơ-gơ, phát âm tiếng Anh là /ˈhæmbɜrɡər/) là một loại thức ăn bao gồm bánh mì kẹp thịt xay (thường là thịt bò) ở giữa. Miếng thịt có thể được nướng, chiên, hun khói hay nướng trên lửa. Hamburger thường ăn kèm với pho mát, rau diếp, cà chua, hành tây, dưa chuột muối chua, thịt xông khói, hoặc ớt; ngoài ra, các loại gia vị như sốt cà chua, mù tạt, sốt mayonnaise, đồ gia vị, hoặc \"nước xốt đặc biệt\", (thường là một biến tấu của sốt Thousand Island) cũng có thể thể rưới lên món bánh. Loại bánh hamburger có topping là pho mát được mọi người gọi là hamburger pho mát.[1]\r\n\r\nThuật ngữ \"burger\" cũng có thể chỉ đến miếng thịt (patty) đặt trên món bánh, đặc biệt là ở Vương quốc Anh, nơi thuật ngữ \"patty\" hiếm khi được sử dụng, hoặc chỉ đơn thuần là ám chỉ đến thịt bò xay. Vì từ hamburger thường ngụ ý đến thịt bò, nên để rõ ràng hơn, tên của loại thịt hoặc nguyên liệu thay thế thịt có thể được đặt trước \"burger\", chẳng hạn như burger bò (beef burger), burger gà tây (turkey burger), burger bò rừng (Bison burger) hoặc burger chay (vegie burger).', '8.jpg', 'khoai tây chiên, khoai, khoai tây, chiên', 0, 1, '', 127, 8, 5),
 (69, 'Gà chiên', 189000, 'Hamburger[a] (tiếng Việt đọc là hăm-bơ-gơ hay hem-bơ-gơ, phát âm tiếng Anh là /ˈhæmbɜrɡər/) là một loại thức ăn bao gồm bánh mì kẹp thịt xay (thường là thịt bò) ở giữa. Miếng thịt có thể được nướng, chiên, hun khói hay nướng trên lửa. Hamburger thường ăn kèm với pho mát, rau diếp, cà chua, hành tây, dưa chuột muối chua, thịt xông khói, hoặc ớt; ngoài ra, các loại gia vị như sốt cà chua, mù tạt, sốt mayonnaise, đồ gia vị, hoặc \"nước xốt đặc biệt\", (thường là một biến tấu của sốt Thousand Island) cũng có thể thể rưới lên món bánh. Loại bánh hamburger có topping là pho mát được mọi người gọi là hamburger pho mát.[1]\r\n\r\nThuật ngữ \"burger\" cũng có thể chỉ đến miếng thịt (patty) đặt trên món bánh, đặc biệt là ở Vương quốc Anh, nơi thuật ngữ \"patty\" hiếm khi được sử dụng, hoặc chỉ đơn thuần là ám chỉ đến thịt bò xay. Vì từ hamburger thường ngụ ý đến thịt bò, nên để rõ ràng hơn, tên của loại thịt hoặc nguyên liệu thay thế thịt có thể được đặt trước \"burger\", chẳng hạn như burger bò (beef burger), burger gà tây (turkey burger), burger bò rừng (Bison burger) hoặc burger chay (vegie burger).', '9.jpg', 'ga, ga chien gion, ga ran, combo ga', 0, 1, '', 99, 4, 1),
-(70, 'Combo Gà + Nước', 299000, 'Hamburger[a] (tiếng Việt đọc là hăm-bơ-gơ hay hem-bơ-gơ, phát âm tiếng Anh là /ˈhæmbɜrɡər/) là một loại thức ăn bao gồm bánh mì kẹp thịt xay (thường là thịt bò) ở giữa. Miếng thịt có thể được nướng, chiên, hun khói hay nướng trên lửa. Hamburger thường ăn kèm với pho mát, rau diếp, cà chua, hành tây, dưa chuột muối chua, thịt xông khói, hoặc ớt; ngoài ra, các loại gia vị như sốt cà chua, mù tạt, sốt mayonnaise, đồ gia vị, hoặc \"nước xốt đặc biệt\", (thường là một biến tấu của sốt Thousand Island) cũng có thể thể rưới lên món bánh. Loại bánh hamburger có topping là pho mát được mọi người gọi là hamburger pho mát.[1]\r\n\r\nThuật ngữ \"burger\" cũng có thể chỉ đến miếng thịt (patty) đặt trên món bánh, đặc biệt là ở Vương quốc Anh, nơi thuật ngữ \"patty\" hiếm khi được sử dụng, hoặc chỉ đơn thuần là ám chỉ đến thịt bò xay. Vì từ hamburger thường ngụ ý đến thịt bò, nên để rõ ràng hơn, tên của loại thịt hoặc nguyên liệu thay thế thịt có thể được đặt trước \"burger\", chẳng hạn như burger bò (beef burger), burger gà tây (turkey burger), burger bò rừng (Bison burger) hoặc burger chay (vegie burger).', '10.jpg', 'ga ran, gà, gà rán, chicken, nước, combo a, gà 2 miếng', 0, 1, '', 99, 4, 2),
+(70, 'Combo Gà + Nước', 299000, 'Hamburger[a] (tiếng Việt đọc là hăm-bơ-gơ hay hem-bơ-gơ, phát âm tiếng Anh là /ˈhæmbɜrɡər/) là một loại thức ăn bao gồm bánh mì kẹp thịt xay (thường là thịt bò) ở giữa. Miếng thịt có thể được nướng, chiên, hun khói hay nướng trên lửa. Hamburger thường ăn kèm với pho mát, rau diếp, cà chua, hành tây, dưa chuột muối chua, thịt xông khói, hoặc ớt; ngoài ra, các loại gia vị như sốt cà chua, mù tạt, sốt mayonnaise, đồ gia vị, hoặc \"nước xốt đặc biệt\", (thường là một biến tấu của sốt Thousand Island) cũng có thể thể rưới lên món bánh. Loại bánh hamburger có topping là pho mát được mọi người gọi là hamburger pho mát.[1]\r\n\r\nThuật ngữ \"burger\" cũng có thể chỉ đến miếng thịt (patty) đặt trên món bánh, đặc biệt là ở Vương quốc Anh, nơi thuật ngữ \"patty\" hiếm khi được sử dụng, hoặc chỉ đơn thuần là ám chỉ đến thịt bò xay. Vì từ hamburger thường ngụ ý đến thịt bò, nên để rõ ràng hơn, tên của loại thịt hoặc nguyên liệu thay thế thịt có thể được đặt trước \"burger\", chẳng hạn như burger bò (beef burger), burger gà tây (turkey burger), burger bò rừng (Bison burger) hoặc burger chay (vegie burger).', '10.jpg', 'ga ran, gà, gà rán, chicken, nước, combo a, gà 2 miếng', 0, 1, 'January 16, 22', 10, 1, 1),
 (71, 'Pizza Viền Phomai', 169000, 'Hamburger[a] (tiếng Việt đọc là hăm-bơ-gơ hay hem-bơ-gơ, phát âm tiếng Anh là /ˈhæmbɜrɡər/) là một loại thức ăn bao gồm bánh mì kẹp thịt xay (thường là thịt bò) ở giữa. Miếng thịt có thể được nướng, chiên, hun khói hay nướng trên lửa. Hamburger thường ăn kèm với pho mát, rau diếp, cà chua, hành tây, dưa chuột muối chua, thịt xông khói, hoặc ớt; ngoài ra, các loại gia vị như sốt cà chua, mù tạt, sốt mayonnaise, đồ gia vị, hoặc \"nước xốt đặc biệt\", (thường là một biến tấu của sốt Thousand Island) cũng có thể thể rưới lên món bánh. Loại bánh hamburger có topping là pho mát được mọi người gọi là hamburger pho mát.[1]\r\n\r\nThuật ngữ \"burger\" cũng có thể chỉ đến miếng thịt (patty) đặt trên món bánh, đặc biệt là ở Vương quốc Anh, nơi thuật ngữ \"patty\" hiếm khi được sử dụng, hoặc chỉ đơn thuần là ám chỉ đến thịt bò xay. Vì từ hamburger thường ngụ ý đến thịt bò, nên để rõ ràng hơn, tên của loại thịt hoặc nguyên liệu thay thế thịt có thể được đặt trước \"burger\", chẳng hạn như burger bò (beef burger), burger gà tây (turkey burger), burger bò rừng (Bison burger) hoặc burger chay (vegie burger).', '12.jpg', 'pizza, phomai', 0, 1, '', 99, 8, 3),
 (72, 'Pizza++', 159000, 'Hamburger[a] (tiếng Việt đọc là hăm-bơ-gơ hay hem-bơ-gơ, phát âm tiếng Anh là /ˈhæmbɜrɡər/) là một loại thức ăn bao gồm bánh mì kẹp thịt xay (thường là thịt bò) ở giữa. Miếng thịt có thể được nướng, chiên, hun khói hay nướng trên lửa. Hamburger thường ăn kèm với pho mát, rau diếp, cà chua, hành tây, dưa chuột muối chua, thịt xông khói, hoặc ớt; ngoài ra, các loại gia vị như sốt cà chua, mù tạt, sốt mayonnaise, đồ gia vị, hoặc \"nước xốt đặc biệt\", (thường là một biến tấu của sốt Thousand Island) cũng có thể thể rưới lên món bánh. Loại bánh hamburger có topping là pho mát được mọi người gọi là hamburger pho mát.[1]\r\n\r\nThuật ngữ \"burger\" cũng có thể chỉ đến miếng thịt (patty) đặt trên món bánh, đặc biệt là ở Vương quốc Anh, nơi thuật ngữ \"patty\" hiếm khi được sử dụng, hoặc chỉ đơn thuần là ám chỉ đến thịt bò xay. Vì từ hamburger thường ngụ ý đến thịt bò, nên để rõ ràng hơn, tên của loại thịt hoặc nguyên liệu thay thế thịt có thể được đặt trước \"burger\", chẳng hạn như burger bò (beef burger), burger gà tây (turkey burger), burger bò rừng (Bison burger) hoặc burger chay (vegie burger).', '13.jpg', 'pizza', 0, 1, '', 99, 8, 3);
 
@@ -159,11 +152,11 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`id`, `ip_address`, `name`, `email`, `password`, `country`, `city`, `contact`, `user_address`, `image`, `role`, `visible`) VALUES
 (14, '127.0.0.1', 'Tien Nghia', 'admin@gmail.com', '750a301a171efe0917a93d2c0c441d8b', NULL, NULL, 'contact2', 'address2', '1.jpg', 'admin', 1),
 (31, '::1', 'asd', 'test@gmail.com', '7815696ecbf1c96e6894b779456d330e', 'AO', 'asd', 'asd', 'asd', '1634263844-698-thumbnail-width640height480.jpg', 'admin', 1),
-(37, '::1', 'asd', 'asd@gmail.com', '7815696ecbf1c96e6894b779456d330e', 'AD', 'asd', 'asd', 'asd', '1634263844-698-thumbnail-width640height480.jpg', 'guest', 1),
-(38, '::1', 'asd', 'asd`@gmail.com', '7815696ecbf1c96e6894b779456d330e', 'AR', 'asd', 'asd', 'asd', '1634263844-698-thumbnail-width640height480.jpg', 'guest', 1),
-(39, '::1', 'asd', 'asd7@gmail.com', '7815696ecbf1c96e6894b779456d330e', 'AS', 'asd', 'asd', 'asd', '1634201500-168-thumbnail-width640height480.jpg', 'guest', 1),
 (40, '::1', 'oc cho', 'cho@gmail.com', '7815696ecbf1c96e6894b779456d330e', 'CG', 'asd', 'asd', 'asd', '1634263844-698-thumbnail-width640height480.jpg', 'guest', 1),
-(42, '::1', 'Trần Đăng Long', 'longs@gmail.com', 'c4ca4238a0b923820dcc509a6f75849b', 'VN', 'Huyện Thạch Hà', '123123123', 'Thạch Hải, Thạch Hà, Hà Tĩnh', '3.jpg', 'admin', 1);
+(42, '::1', 'Trần Đăng Long', 'longs@gmail.com', 'c4ca4238a0b923820dcc509a6f75849b', 'VN', 'Huyện Thạch Hà', '123123123', '111', '5.jpg', 'admin', 1),
+(43, '127.0.0.1', '111', 'ac@gmail.com', 'c4ca4238a0b923820dcc509a6f75849b', 'HR', 'â', 'd', 'a', '3.png', 'guest', 1),
+(44, '127.0.0.1', 'Long', 'ac1@gmail.com', 'c4ca4238a0b923820dcc509a6f75849b', 'VN', 'DN', '000000', 'DN', '20.jpg', 'guest', 1),
+(45, '127.0.0.1', 'Long', 'ac12@gmail.com', 'c4ca4238a0b923820dcc509a6f75849b', 'VN', 'DN', '000000000000000', 'DN', '7.jpg', 'guest', 1);
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -217,7 +210,7 @@ ALTER TABLE `brands`
 -- AUTO_INCREMENT cho bảng `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=275;
+  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=289;
 
 --
 -- AUTO_INCREMENT cho bảng `categories`
@@ -229,13 +222,13 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT cho bảng `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
+  MODIFY `product_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
 
 --
 -- AUTO_INCREMENT cho bảng `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- Các ràng buộc cho các bảng đã đổ
